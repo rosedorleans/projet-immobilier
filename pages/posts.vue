@@ -9,18 +9,21 @@
 			<select name="rooms">
 				<option value="">--- Pièces ---</option>
 				<option value="1">1</option>
-				<option value="1">2</option>
-				<option value="1">3</option>
-				<option value="1">4</option>
-				<option value="1">5+</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5+</option>
 			</select>
 			<input type="number" placeholder="Superficie">
 			<input type="number" placeholder="Prix">
+
+			<button type="submit">Rechercher</button>
 		</form>
 
 		<div>
 			<div>
 				<h2>Maison 3 pièces 80 m²</h2>
+				<img src="https://img.leboncoin.fr/api/v1/lbcpb1/images/03/2e/f3/032ef3a7c816a2fd0f66253af1fda82c498bee1e.jpg?rule=ad-large" alt="maison" style="height: 300px;">
 				<h3>
 					3 Pièces · 80 m² · Les Sorinières 44840
 				</h3>
@@ -66,6 +69,7 @@
 			</div>
 			<div>
 				<h2>Maison 2 chambres 85 m2</h2>
+				<img src="https://img.leboncoin.fr/api/v1/lbcpb1/images/3b/9c/bf/3b9cbfb839fd73b17285f2831726b58feb79310e.jpg?rule=ad-large" alt="maison" style="height: 300px;">
 				<h3>
 					3 Pièces · 85 m² · Bouguenais 44340
 				</h3>
