@@ -5,3 +5,9 @@ test("Example test index", async ({ page }) => {
   const text = await page.textContent("h1");
   expect(text).toBe("Bienvenue sur notre site de vente de maison");
 });
+
+test("Check form contat", async ({ page }) => {
+  await page.goto("localhost:3000/contact");
+  const formExists = await page.$('form') !== null;
+  expect(formExists).toBeTruthy();
+});
