@@ -6,7 +6,7 @@ test("Example test index", async ({ page }) => {
   expect(text).toBe("Bienvenue sur notre site de vente de maison");
 });
 
-test("Check form contat", async ({ page }) => {
+test("Check form contact", async ({ page }) => {
   await page.goto("localhost:3000/contact");
   const formExists = await page.$('form') !== null;
   expect(formExists).toBeTruthy();
