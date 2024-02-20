@@ -11,3 +11,9 @@ test("Check form contact", async ({ page }) => {
   const formExists = await page.$('form') !== null;
   expect(formExists).toBeTruthy();
 });
+
+test("Check image in Posts page", async ({ page }) => {
+  await page.goto("localhost:3000/posts");
+  const postExist = await page.$('img') !== null;
+  expect(postExist).toBeTruthy();
+});
