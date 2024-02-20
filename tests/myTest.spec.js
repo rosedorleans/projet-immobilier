@@ -17,3 +17,15 @@ test("Check image in Posts page", async ({ page }) => {
   const postExist = await page.$('img') !== null;
   expect(postExist).toBeTruthy();
 });
+
+
+test("Check form search posts", async ({ page }) => {
+  await page.goto("localhost:3000/posts");
+  const formExists = await page.$("form") !== null;
+  expect(formExists).toBeTruthy();
+  const initialUrl = page.url();
+  await page.click("form button[type='submit']");
+  await page.waitForLoadState('networkidle');
+  const currentUrl = page.url();
+  expect(currentUrl).not.toEqual(initialUrl);
+});
